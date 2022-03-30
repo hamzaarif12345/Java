@@ -1,0 +1,42 @@
+package exe;
+import java.awt.*;
+import javafx.scene.control.CheckBox;
+public class frames {
+    //Label l =new label("ok");
+    
+    
+    
+    public static void main(String args[]){
+        //GridLayout obj =new GridLayout(2,2);
+        
+        Frame f =new Frame("hello");
+        //Panel p = new Panel();
+        Button b =new Button("click here");
+        b.setBounds(120,80,180,120);
+        
+        //p.add(b);
+        Button b1 =new Button("click here yourself");
+        b1.setBounds(120,310,180,120);
+        f.setLocation(100,200);
+        
+        
+        //Panel p1 =new Panel();
+        //p1.add(b1);
+        //f.add(p1);
+        //f.add(p);// last on to be added is shown
+        Checkbox ch =new Checkbox("ABC");
+        Checkbox ch1 =new Checkbox("DEF");
+        //ch.setBounds(200,200,300,500);
+        f.add(b);
+        f.add(b1);
+        f.add(ch);
+        f.add(ch1);
+        //ch1.setBounds(30,50,300,500);
+        
+        //f.setLayout(obj);
+        f.setSize(300,300);
+        f.setLayout(null);
+        f.setVisible(true);
+                
+    }
+}
